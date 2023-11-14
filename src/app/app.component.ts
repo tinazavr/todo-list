@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {TodoItem} from './interfaces/todo-item'
+import { TodoItem } from './interfaces/todo-item';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
- 
+
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
@@ -16,4 +16,7 @@ export class AppComponent {
     { title: 'develop app' },
     { title: 'deploy app' },
   ];
+  addItem(title: string) {
+    this.todoList.push({ title: title });
+  }
 }
