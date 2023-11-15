@@ -7,7 +7,8 @@ import {TodoItem} from '../interfaces/todo-item';
 })
 export class TodoItemComponent implements OnInit {
   @Input() item: TodoItem;
-  
+
+ 
   constructor() {}
 
   ngOnInit(): void {}

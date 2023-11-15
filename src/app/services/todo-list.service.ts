@@ -12,9 +12,12 @@ export class TodoListService {
     { title: 'develop app' },
     { title: 'deploy app' },
   ];
+  addItem(item: TodoItem): void {
+    this.todoList.push(item);
+  }
   constructor() {}
 
-  getTodoList(): TodoItem[]{
+  getTodoList(): TodoItem[] {
     return this.todoList;
   }
 }
